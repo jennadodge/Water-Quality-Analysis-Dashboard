@@ -12,7 +12,6 @@ app.layout = dbc.Container([
     dcc.Location(id='url',refresh=False),
     dbc.NavbarSimple(    
         children=[
-            # dbc.NavbarBrand("Water Quality Analysis", href='#'),
             dbc.Nav(
                 [
                 dbc.NavLink('Exploratory Data Analysis', href='/apps/page1'),
@@ -25,17 +24,10 @@ app.layout = dbc.Container([
         brand_href="#",
         color='primary',
         dark=True,
-        className='mb-4', 
-    # fluid=True, 
+        className='mb-4',  
     ) ,    
     html.Div(id='page-content', children=[]), #page content all goes in here
-    # dbc.Row([
-    #     dbc.Col([
-    #         dcc.Link('Exploratory Data Analysis | ', href='/apps/page1'),
-    #         dcc.Link('Machine Learning Model | ',href='/apps/page2'),
-    #         dcc.Link('Results',href='/apps/page3'),
-    #     ]),
-    # ]),
+   
 ])
 
 @app.callback(

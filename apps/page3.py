@@ -43,18 +43,10 @@ layout = dbc.Container([
                     ],
                 className="card bg-light")
             ]),
-            # html.H5("Initial Analysis",
-                    # className='text-center text-primary mb-4'), #mb-4 padding
-            # html.H6("This page will talk about initial analysis of the data",
-            #         className="text-center text-muted")
+
         ], width=6),
         
-        # dbc.Col(
-        #     html.H5("Please select a value from the dropdown to view demographic "
-        #                 "or contaminant data on a County level. Click on a County to view "
-        #                 "more detailed graphs below.",
-        #             className='text-center text-primary mb-4'), #mb-4 padding
-        #     width=6),
+
         dbc.Col(
              dcc.Dropdown(id = 'dropdown',options=df_map.columns.values,
                         value='Number of Contaminants',
@@ -65,10 +57,7 @@ layout = dbc.Container([
     dbc.Row([
 
         dbc.Col([
-            # html.H5("Please Select A Value", className='mb-3'),
-            # dcc.Dropdown(id = 'dropdown',options=df_map.columns.values,
-            #             value='Number of Contaminants',
-            #             clearable=False),
+
             dcc.Graph(id='mygraph', figure={}, clickData=None, hoverData=None, # By defualt, these are None, unless you specify otherwise.
                   config={
                       'staticPlot': False,     # True, False
@@ -77,7 +66,6 @@ layout = dbc.Container([
                       'showTips': False,       # True, False
                       'displayModeBar': 'hover',  # True, False, 'hover'
                       'watermark': True,
-                      # 'modeBarButtonsToRemove': ['pan2d','select2d'],
                         },), 
         ], className='mb-4', width=12),
  

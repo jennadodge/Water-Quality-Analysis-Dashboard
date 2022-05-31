@@ -24,10 +24,6 @@ layout = dbc.Container([
                     ],
                 className="card text-white bg-info mb-4")
             ]),
-            # html.H5("Initial Analysis",
-                    # className='text-center text-primary mb-4'), #mb-4 padding
-            # html.H6("This page will talk about initial analysis of the data",
-            #         className="text-center text-muted")
         ], width=12), justify="center"
     ),
     
