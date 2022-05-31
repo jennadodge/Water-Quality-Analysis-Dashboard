@@ -1,6 +1,10 @@
 # MAC OS files
 .DS_Store
 
+venv
+*.pyc
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
